@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>剁手網</title>
+    <link rel="stylesheet" href="stylesheets/normalize.css" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="header-div">
+            新春特價中!三件免運再抽大紅包!
+        </div>
+    </header>
+    <nav class="main-menu">
+    
+        <div class="container">
+    
+            <ul class="ul-menu">
+                <li><a href="#">線上商城</a></li>
+                <li><a href="#">關於剁手</a></li>
+                <li><a href="#" class="test-a">聯絡我們</a></li>
+            </ul>
+            <div class="title">
+                <a href="#">剁手網</a>
+            </div>
+            <ul class="ul-icon">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fas fa-globe-asia"></i></a></li>
+                <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+    
+        </div>
+        <button>Menu<i class="fas fa-sort-down"></i></button>
+    </nav>
+    <div class="shopping-img">
+        <h2>
+            我剁手，我驕傲。
+        </h2>
+    </div>
+    <section class="hot-item">
+        <div class="container">
+            <h2 class="hot-title">
+                熱賣商品
+            </h2>
+            <ul>
+                <li><img src="https://via.placeholder.com/250/D3D3D3%20?Text=250x250" alt="205X250"></li>
+                <li><img src="https://via.placeholder.com/250/D3D3D3%20?Text=250x250" alt="205X250"></li>
+                <li><img src="https://via.placeholder.com/250/D3D3D3%20?Text=250x250" alt="205X250"></li>
+                <li><img src="https://via.placeholder.com/250/D3D3D3%20?Text=250x250" alt="205X250"></li>
+            </ul>
+            <ul>
+                <li><img src="https://via.placeholder.com/250/D3D3D3%20?Text=250x250" alt="205X250"></li>
+                <li><img src="https://via.placeholder.com/250/D3D3D3%20?Text=250x250" alt="205X250"></li>
+                <li><img src="https://via.placeholder.com/250/D3D3D3%20?Text=250x250" alt="205X250"></li>
+                <li><img src="https://via.placeholder.com/250/D3D3D3%20?Text=250x250" alt="205X250"></li>
+            </ul>
+        </div>
+    </section>
+    <div class="page-intro">
+        <div class="container">
+            <h2>
+                就是要你剁手
+            </h2>
+            <p>
+                我猜想，小鵝，軟弱時有督責，日子雖短，甚至有時打滾......<br />
+                這不取費的最珍貴的補劑便永遠供你的受用；只要你認識了這一部書，<br />
+                正像是去赴一個美的宴會，我們多長一歲年紀往往只是加重我們頭上的枷，自由與自在的時候，<br />
+                把一個小花圈掛上你的門前那時間我，小書你媽曾經件件的指給我看，<br />
+                可愛，她多疼你！<br />
+            </p>
+        </div>
+    </div>
+
+    <section class="contact-mail">
+        <div class="container">
+            <h2>擔心錯過剁手的好機會嗎?<span>快來訂閱電子報吧!</span></h2>
+            <form action="#" class="input-mail">
+                <div class="cotainer">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="email" />
+                    <br />
+                    <input type="submit" value="訂!" />
+
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#">線上商城</a></li>
+                    <li><a href="#">關於剁手</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">運費資訊</a></li>
+                    <li><a href="#">隱私權政策</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            2019&copy; BuildSchool
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+             console.log("ready!");
+            if ($(".main-menu button").is(":visible")) {
+                $(".main-menu .ul-menu").hide();
+                $(".main-menu button").on("click", function () {
+                    $(".main-menu .ul-menu").toggle();//toggle() 狀態的切換  show() 只能秀出來
+                    $(".main-menu button i").toggleClass("fas fa-sort-down").toggleClass("fas fa-sort-up");//原本的想法 但是單向removeClass("fas fa-sort-down").addClass("fas fa-sort-up")
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
